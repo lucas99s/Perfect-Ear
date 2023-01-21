@@ -1,6 +1,9 @@
-import {getId} from '../scripts/library.js'
+import { majorNote } from '../scripts/notes.js';
+import { minorNote } from '../scripts/notes.js';
 
-const musicNotes = [majorNote[3], majorNote[5], majorNote[10], minorNote[7]];
+let musicNotes = [majorNote[3], majorNote[5], majorNote[10], minorNote[7]];
+
+console.log(majorNote)
 
 /*
     0 = D#

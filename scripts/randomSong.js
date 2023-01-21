@@ -1,17 +1,13 @@
-import {saturnSleepingAtLast} from '../musics/saturn-sleeping-at-last.js'
+import { saturnSleepingAtLast } from '../musics/saturn-sleeping-at-last.js'
 
 let Musics = [
     ['Saturn', saturnSleepingAtLast],
     ['Other', 'ranmd']
 ]
 
-let music
+export let music
 
-randomSong()
 export function randomSong() {
-    let index = Math.floor(Math.random() * 2)
-    console.log(index)
+    let index = Math.floor(Math.random() * Musics.length)
     music = Musics[index][1]
 }
-
-export let song = music
