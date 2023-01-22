@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    transition: 0.3s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,52 +15,11 @@ body {
     background-color: var(--neutral-1);
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     margin: 0 auto;
     padding: 10px 50px 0 50px;
-}
-
-pre {
-    margin: 0 !important;
-    color: white;
-    display: block;
-    font-size: 13px;
-}
-
-.stanza {
-    margin-bottom: 5px;
-    color: white;
-}
-
-input {
-    width: 100%;
-    border: 2px solid rgba(255, 0, 0, 0);
-    transition: 0.2s;
-    background-color: var(--neutral-1);
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color: white;
-    border-radius: 3px;
-}
-
-.input-container {
-    height: 30px;
-}
-
-.input-container:hover {
-    margin-bottom: 10px;
-}
-
-.input-container:hover input {
-    border: 1.5px solid var(--primary-1);
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-input:focus-visible {
-    outline: none;
-    border: 1.5px solid rgba(0, 149, 255, 0);
-    margin-top: 10px;
-    margin-bottom: 0px;
-    border-bottom: 1.5px solid var(--primary-1);
 }

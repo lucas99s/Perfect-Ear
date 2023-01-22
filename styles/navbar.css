@@ -1,0 +1,24 @@
+@import url(style.css);
+
+#navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--primary-1);
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    margin-left: 20px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    font-size: 25px;
+    color: white;
+}
