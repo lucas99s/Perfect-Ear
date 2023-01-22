@@ -1,7 +1,10 @@
-import {music, randomSong} from './randomSong.js'
+import { music , randomSong, tone } from './randomSong.js'
 import {getId} from '../scripts/library.js'
 
-getId('randomSongButton').addEventListener('click', () => {
+function song() {
     randomSong()
     getId('song').innerHTML = music
-})
+    getId('tone').innerHTML = 'Tom: ' + tone
+}
+
+song()
