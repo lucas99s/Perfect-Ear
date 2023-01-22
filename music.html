@@ -8,21 +8,42 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/musics.css">
-</head>
-<body>
-    <nav id="navbar"></nav>
-    <div class="container">
-        <div>
-            <div id="display-tone"></div>
-        </div>
-        <div id="song">Sortear música</div>
-        <div id="tone">Tom</div>
+    </head>
+    <body>
+        <nav id="navbar"></nav>
+        <div class="container">
+            <div class="music-infos">
+                <div>
+                    <h1>Saturn</h1>
+                    <h3>Sleeping at last</h3>
+                    <div id="tone">Tom</div>
+                    </div>
+                    <button id="button-show" class="button-show" onclick="showNotes()">Mostrar notas</button>
+                    </div>
+                    <div id="song"></div>
     </div>
-</body>
-<footer>
-    <script type="module" src="scripts/main.js"></script>
-    <script src="scripts/notes.js"></script>
-    <script type="module" src="/scripts/navbar.js"></script>
-    <script type="module" src="/musics/saturn-sleeping-at-last.js"></script>
-</footer>
+    </body>
+    <footer>
+        <script type="module" src="scripts/main.js"></script>
+        <script type="module" src="/scripts/navbar.js"></script>
+        <script type="module" src="/musics/saturn-sleeping-at-last.js"></script>
+        <script> 
+            let showing = false
+            let pre = document.getElementsByTagName("pre")
+            function showNotes() {
+
+                if(showing == false) {
+                    showing = true
+                    for(let i = 0; i < pre.length; i++) {
+                        pre[i].classList.add('show-notes')
+                    }
+                } else if(showing == true) {
+                    showing = false
+                    for(let i = 0; i < pre.length; i++) {
+                        pre[i].classList.remove('show-notes')
+                    }
+                }
+            }
+        </script>
+    </footer>
 </html>

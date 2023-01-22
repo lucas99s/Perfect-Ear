@@ -8,7 +8,10 @@
 :root {
     --primary-1: rgb(0, 149, 255);
     --primary-2: rgb(0, 255, 102);
-    --neutral-1: rgb(39, 33, 64);
+    
+    --neutral-1: rgb(38, 38, 38);
+    --neutral-2: rgb(56, 56, 56);
+    --animation: 0.2s
 }
 
 body {
@@ -22,4 +25,5 @@ a {
 .container {
     margin: 0 auto;
     padding: 10px 50px 0 50px;
+    max-width: 1366px;
 }

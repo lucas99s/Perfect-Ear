@@ -2,45 +2,86 @@
 
 pre {
     margin: 0 !important;
-    color: white;
     display: block;
-    font-size: 13px;
+    font-weight: bold;
+    height: 0;
+    opacity: 0;
+    transition: var(--animation);
+    position: relative;
+    z-index: -1;
+}
+
+.show-notes {
+    height: 20px;
+    opacity: 1;
 }
 
 .stanza {
     margin-bottom: 5px;
-    color: white;
 }
 
 input {
     width: 100%;
     border: 2px solid rgba(255, 0, 0, 0);
     transition: 0.2s;
-    background-color: var(--neutral-1);
+    background-color: var(--neutral-2);
     margin-top: 10px;
-    margin-bottom: 0px;
-    color: white;
+    margin-bottom: 10px;
     border-radius: 3px;
+
+}
+
+input, pre, .stanza, #tone {
+    font-size: 20px;
+}
+
+input, pre, .stanza, #tone, h1, h3 {
+    color: white;
 }
 
 .input-container {
     height: 30px;
+    margin-bottom: 10px;
+    transition: var(--animation);
 }
 
 .input-container:hover {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .input-container:hover input {
-    border: 1.5px solid var(--primary-1);
+    border: 2px solid var(--primary-1);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 input:focus-visible {
     outline: none;
-    border: 1.5px solid rgba(0, 149, 255, 0);
+    border: 2px solid rgba(0, 149, 255, 0);
     margin-top: 10px;
     margin-bottom: 0px;
-    border-bottom: 1.5px solid var(--primary-1);
+    border-bottom: 2px solid var(--primary-1);
+}
+
+.container-stanza {
+    width: 59%;
+}
+
+.container-video {
+    width: 39%;
+}
+
+#song {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.music-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-infos, .music-infos div h3 {
+    margin-bottom: 15px;
 }
