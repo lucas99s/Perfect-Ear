@@ -33,11 +33,11 @@ input {
 
 }
 
-input, pre, .stanza, #tone, .button-show {
+input, pre, .stanza, #tone, .button-show, .tips {
     font-size: 20px;
 }
 
-input, pre, .stanza, #tone, h1, h3 {
+input, pre, .stanza, #tone, h1, h3, .tips {
     color: white;
 }
 
@@ -70,21 +70,15 @@ input:focus-visible {
     padding-bottom: 500px;
 }
 
-.container-video {
+#container-video {
     width: 39%;
     position: relative;
     top: 0;
 }
 
-.container-video div {
+#container-video iframe {
     position: sticky;
     top: 70px;
-}
-
-.container-video div button {
-    position: relative;
-    top: -35px;
-    right: 0;
 }
 
 #song {
@@ -113,4 +107,8 @@ input:focus-visible {
     cursor: pointer;
     height: 50px;
     border: none;
+}
+
+.tips {
+    padding: 20px;
 }

@@ -71,11 +71,8 @@ export let saturn =
         <div class="stanza">How rare and beautiful it truly is that we exist.</div>
 
     </div>
-    <div class="container-video">
-        <div>
-
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dzNvk80XY9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+    <div id="container-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dzNvk80XY9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     `
 
