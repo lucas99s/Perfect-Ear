@@ -2,7 +2,7 @@ import { majorNote } from '../scripts/notes.js';
 import { minorNote } from '../scripts/notes.js';
 import { getId } from '../scripts/library.js';
 
-let musicNotes = [majorNote[3], minorNote[4], majorNote[8], majorNote[1], minorNote[5]];
+let musicNotes = [majorNote[3], minorNote[4], majorNote[8], majorNote[1], minorNote[5], majorNote[9]];
 
 /*
     0 = D#
@@ -12,7 +12,7 @@ let musicNotes = [majorNote[3], minorNote[4], majorNote[8], majorNote[1], minorN
     4 = Fm
 */
 
-export let kingsAndQueensTone = musicNotes[2]
+export let kingsAndQueensTone = musicNotes[5]
 export let kingsAndQueens =
     `
     <div class="container-stanza">
@@ -121,7 +121,7 @@ export let kingsAndQueens =
         <pre>                 ${musicNotes[0]}       ${musicNotes[3]}      ${musicNotes[2]} </pre>
         <div class="input-container"><input type="text" value="                                                                                                            "></div>
         <div class="stanza">We are the Kings</div>
-        
+
         <pre>                 ${musicNotes[0]}       ${musicNotes[3]}      ${musicNotes[2]} </pre>
         <div class="input-container"><input type="text" value="                                                                                                            "></div>
         <div class="stanza">We are the Kings</div>
