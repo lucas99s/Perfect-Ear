@@ -1,8 +1,8 @@
-import { majorNote } from '../scripts/notes.js';
-import { minorNote } from '../scripts/notes.js';
+import { majorChords } from '../scripts/notes.js';
+import { minorChords } from '../scripts/notes.js';
 import { getId } from '../scripts/library.js';
 
-let musicNotes = [majorNote[3], minorNote[4], majorNote[8], majorNote[1], minorNote[5], majorNote[9]];
+let musicNotes = [majorChords[3], minorChords[4], majorChords[8], majorChords[1], minorChords[5], majorChords[9]];
 
 /*
     0 = D#
