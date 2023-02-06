@@ -32,6 +32,35 @@ hr {
     max-width: 1366px;
 }
 
+.container-full {
+    width: 100vw;
+    height: 50vh;
+    overflow-y: hidden;
+}
+
+.container-full img {
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    background-position: center;
+}
+
+.header-content {
+    position: absolute;
+    z-index: 1;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
 .button {
     background-color: white;
 }
