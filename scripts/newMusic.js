@@ -12,16 +12,15 @@ export function processMusic() {
                         if(obj.includes(majorMemory[j])) {
                             if(obj.includes('#')) {
                                 subs += obj.replace(majorMemory[j], `majorChords[${j + 1}]`)
+                                j++
                             } else if(obj.includes('b')) {
                                 subs += obj.replace(majorMemory[j], `majorChords[${ j - 1}]`)
                             } else {
-                                subs += obj.replace(majorMemory[j], 'majorChords['+j+']')
+                                subs += obj.replace(majorMemory[j], `majorChords[${ j }]`)
                             }
-                            console.log(subs)
                         }
                     }
                 } else if(obj == '') {
-                    console.log(subs)
                     subs += ' '
                 }
             })
