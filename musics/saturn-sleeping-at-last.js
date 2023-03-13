@@ -1,17 +1,7 @@
-import { majorChords } from '../scripts/notes.js';
-import { minorChords } from '../scripts/notes.js';
+import { chords } from '../scripts/notes.js';
 import { getId } from '../scripts/library.js';
 
-let musicNotes = [majorChords[3], majorChords[5], majorChords[10], minorChords[7]];
-
-console.log(majorChords)
-
-/*
-    0 = D#
-    1 = F
-    2 = A#
-    3 = Gm
-*/
+let musicNotes = [`${chords[1]}#`, chords[3], `${chords[5]}#`, `${chords[4]}m`];
 
 export let saturnTone = musicNotes[2]
 export let saturn =

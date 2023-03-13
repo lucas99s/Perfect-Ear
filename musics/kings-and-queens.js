@@ -1,8 +1,7 @@
-import { majorChords } from '../scripts/notes.js';
-import { minorChords } from '../scripts/notes.js';
+import { chords } from '../scripts/notes.js';
 import { getId } from '../scripts/library.js';
 
-let musicNotes = [majorChords[3], minorChords[4], majorChords[8], majorChords[1], minorChords[5], majorChords[9]];
+let musicNotes = [`${chords[1]}#`, `${chords[2]}m`, `${chords[4]}#`, `${chords[0]}#`, `${chords[3]}m`, `${chords[5]}`];
 
 /*
     0 = D#
